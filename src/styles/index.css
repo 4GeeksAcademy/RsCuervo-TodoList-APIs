@@ -9,3 +9,29 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+ul{
+    padding-left: 0px;
+    text-align: left;
+    margin-top: 0px;
+}
+.task-item {
+    position: relative;
+  }
+  
+  .task-item:hover .delete-btn {
+    display: inline-block;
+  }
+  
+  .delete-btn {
+    display: none;
+  }
+  .no-tareas {
+    color: #999;
+    font-style: italic;
+  }
+  .form-control{
+   border-radius: 0;
+  }
+  .contador-tareas{
+    font-size: x-small;
+  }
