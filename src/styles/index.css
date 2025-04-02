@@ -9,29 +9,36 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
-ul{
-    padding-left: 0px;
-    text-align: left;
-    margin-top: 0px;
+
+ .tasks-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+ 
 }
+
 .task-item {
-    position: relative;
-  }
-  
-  .task-item:hover .delete-btn {
-    display: inline-block;
-  }
-  
-  .delete-btn {
-    display: none;
-  }
-  .no-tareas {
-    color: #999;
-    font-style: italic;
-  }
-  .form-control{
-   border-radius: 0;
-  }
-  .contador-tareas{
-    font-size: x-small;
-  }
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.task-input {
+  width: 100%;
+  border-radius: 4px;
+  cursor: default; 
+  padding-right: 40px; 
+}
+
+.delete-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.task-item:hover .delete-btn {
+  display: inline-block;
+}
